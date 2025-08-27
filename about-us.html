@@ -13,7 +13,8 @@
     href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Roboto:wght@400;700&family=Covered+By+Your+Grace&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/new-style.css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
       <!-- =========================
         Header
     =========================== -->
-       <header class="header header-layout1">
+        <header class="header header-layout1">
       <div class="header-topbar">
         <div class="container-fluid">
           <div class="row align-items-center">
@@ -72,83 +73,393 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav__item has-dropdown">
                 <a href="index.html" class="nav__item-link">Home</a>
-                <!-- <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="index.html" class="nav__item-link">Home Modern</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="home-classic.html" class="nav__item-link">Home Classic</a>
-                  </li>
-                  <li class="nav__item">
-                    <a href="home-shop.html" class="nav__item-link">Home Shop</a>
-                  </li>
-                </ul>  -->
-              </li><!-- /.nav-item -->
+              </li>
               <li class="nav__item has-dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Company</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
                     <a href="about-us.html" class="nav__item-link">About Us</a>
-                  </li><!-- /.nav-item -->
-                  <!-- <li class="nav__item">
-                    <a href="how-it-works.html" class="nav__item-link">How It Works</a>
-                  </li> -->
-                  <!-- /.nav-item -->
+                  </li>
                   <li class="nav__item">
                     <a href="team.html" class="nav__item-link">Leadership Team</a>
                   </li>
-                  <!-- /.nav-item -->
-                  <!-- <li class="nav__item">
-                    <a href="awards.html" class="nav__item-link">Awards & Recognition</a>
-                  </li>/.nav-item -->
                   <li class="nav__item">
                     <a href="locations.html" class="nav__item-link">Our Locations</a>
                   </li>
-                  <!-- /.nav-item -->
-                  <!-- <li class="nav__item">
-                    <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
-                  </li>  -->
+                
                   <li class="nav__item">
                     <a href="gallery.html" class="nav__item-link">Our Gallery</a>
                   </li>
                   <li class="nav__item">
                     <a href="careers.html" class="nav__item-link">Careers</a>
                   </li>
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
-              
-             <li class="nav__item has-dropdown">
-                <a href="services.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Services</a>
-                <ul class="dropdown-menu">
-                  
-                  <li class="nav__item" ><a href="services-single.html" class="nav__item-link" >Cleaning Services</a></li>
-                    <li class="nav__item" ><a href="industries-single.html" class="nav__item-link" >Plumbing Services</a></li>
-                    <li class="nav__item" ><a href="#" class="nav__item-link" >Electrician Services</a></li>
-                    <li class="nav__item" ><a href="#" class="nav__item-link" >Appliance Services</a></li>
-                    <li class="nav__item" ><a href="#" class="nav__item-link" >Carpentry Services</a></li>
-                    <li class="nav__item" ><a href="#" class="nav__item-link" >Painting & Renovation</a></li>
-                    <li class="nav__item" ><a href="#" class="nav__item-link" >Pest Control Services</a></li>
-                    <li class="nav__item" ><a href="#" class="nav__item-link" >Home Maintenance & Handyman</a></li>
-                    <li class="nav__item" ><a href="#" class="nav__item-link" >Gardening & Outdoor</a></li>
-                    <li class="nav__item" ><a href="#" class="nav__item-link" >IT & Smart Home Services</a></li>
-                </ul><!-- /.dropdown-menu -->
+                </ul>
               </li>
-             
-            
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Shop</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="shop.html" class="nav__item-link">Shop Products</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="shop-single-product.html" class="nav__item-link">Single Product</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="shopping-cart.html" class="nav__item-link">Cart</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
+                <!-- new -->
+              <!-- Dropdown -->
+                <li class="dropdown nav__item">
+                    <a href="#" class="nav__item-link dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        Services
+                    </a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li class="dropdown-submenu nav__item">
+                            <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                Cleaning Services
+                                <span class="d-block">▾</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                               
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Home Cleaning
+                                        <span class="d-block">▾</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Deep Cleaning</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Regular Housekeeping</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Carpet & Upholstery Cleaning</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Kitchen & Bathroom Sanitization</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Commercial Cleaning
+                                        <span class="d-block">▾</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Office Cleaning</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Industrial Cleaning</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Shop/Showroom Cleaning</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Post-Construction Cleaning</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Specialized Cleaning
+                                        <span class="d-block">▾</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Sofa/Chair Cleaning</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Mattress & Curtain Cleaning</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Window & Glass Cleaning</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Pest Control & Disinfection</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu nav__item">
+                            <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                Plumbing Services
+                                <span class="d-block">▾</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Installation Services
+                                        <span class="d-block">▾</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Tap & Faucet Installation</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Sink, Basin & Washroom Fitting</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Water Tank Installation</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Geyser/Heater Installation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Repair & Maintenance
+                                        <span class="d-block">▾</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Leak Repairs (Pipes, Faucets)</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Drain & Sewer Line Cleaning</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Toilet & Sink Unclogging</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Water Motor & Pump Repair</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Advanced Plumbing
+                                        <span class="d-block">▾</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Pipeline Replacement</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Bathroom/Kitchen Renovation Plumbing</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Underground Leakage Detection</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Water Filtration System Installation</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu nav__item">
+                            <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                Electrician Services
+                                <span class="d-block">▾</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Installation Services
+                                        <span class="d-block">▾</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">New Wiring & Rewiring</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Switchboard & Socket Installation</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Ceiling Fans, Lights & Chandeliers</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Inverter & Stabilizer Installation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Repair & Maintenance
+                                        <span class="d-block">▾</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Faulty Wiring Fix</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Power Backup Issues</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Short Circuit & Fuse Repair</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Appliance Repair (Heater, Geyser, AC, Refrigerator)</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Specialized Electrical Work
+                                        <span class="d-block">▾</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Home Automation Setup</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">CCTV & Security System Installation</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Solar Panel Installation</a></li>
+                                        <li class="nav__item"><a class="dropdown-item nav__item-link" href="#">Generator Setup & Maintenance</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu nav__item">
+                            <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                Appliance Services
+                                <span class="d-block">▾</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        AC Installation & Repair
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Refrigerator Repair
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Washing Machine Repair
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Microwave & Oven Repair
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Water Purifier Installation/Repair
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu nav__item">
+                            <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                Carpentry Services
+                                <span class="d-block">▾</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Furniture Assembly
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Door & Window Repairs
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Modular Kitchen Setup
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Wardrobe & Cabinet Work
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Wood Polishing
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu nav__item">
+                            <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                Painting & Renovation
+                                <span class="d-block">▾</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Interior Painting
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Exterior Painting
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Waterproofing
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Wall Texture & Wallpaper
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Complete Home Renovation
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu nav__item">
+                            <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                Pest Control Services
+                                <span class="d-block">▾</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        General Pest Control
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Termite Treatment
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Bed Bug Treatment
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Mosquito Control
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Rodent Control
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu nav__item">
+                            <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                Home Maintenance & Handyman
+                                <span class="d-block">▾</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Drilling & Hanging (TV, Frames, Curtains)
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Minor Repairs
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Grouting & Tile Fixing
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Curtain & Blinds Installation
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Furniture Shifting Help
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu nav__item">
+                            <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                Gardening & Outdoor Services
+                                <span class="d-block">▾</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Lawn Mowing & Landscaping
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Plant Care & Fertilization
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Tree Cutting & Trimming
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Garden Irrigation System Setup
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu nav__item">
+                            <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                IT & Smart Home Services
+                                <span class="d-block">▾</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Wi-Fi & Router Setup
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        CCTV & Security Systems
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Smart Lock Installation
+                                    </a>
+                                </li>
+                                <li class="dropdown-submenu nav__item">
+                                    <a class="dropdown-item dropdown-toggle nav__item-link d-flex justify-content-between" href="#">
+                                        Home Automation (Alexa/Google devices)
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                      </ul>
+                    
+                </li>
+                <!-- new end-->
               <li class="nav__item">
                 <a href="contact-us.html" class="nav__item-link">Contact Us</a>
               </li><!-- /.nav-item -->
@@ -192,7 +503,8 @@
           </ul>
         </div><!-- /.container -->
       </nav><!-- /.navabr -->
-    </header><!-- /.Header -->
+    </header>
+    <!-- /.Header -->
 
     <!-- ============================
        page title 
@@ -907,7 +1219,7 @@
     <!-- ========================
       Footer
     ========================== -->
-    <footer class="footer">
+     <footer class="footer">
       <div class="footer-primary">
         <div class="container">
           <div class="row">
@@ -935,8 +1247,9 @@
                   <ul class="list-unstyled">
                     <li><a href="about-us.html">About Us</a></li>
                     <li><a href="team.html">Leadership Team</a></li>
-                    <li><a href="locations.html">Our Locations</a></li>
+                    <li><a href="locations.html">Our Location</a></li>
                     <li><a href="gallery.html">Our Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="careers.html">Careers</a></li>
                   </ul>
                 </nav>
@@ -955,8 +1268,8 @@
                     <li><a href="services-single.html">Painting & Renovation</a></li>
                     <li><a href="services-single.html">Pest Control Services</a></li>
                     <li><a href="services-single.html">Home Maintenance & Handyman</a></li>
-                    <li><a href="services-single.html">Gardening & Outdoor</a></li>
-                    <li><a href="services-single.html">IT & Smart Home Services</a></li>
+                    <li><a href="services-single.html">Gardening & Outdoor Services</a></li>
+                    <li><a href="services-single.html"> IT & Smart Home Services</a></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget__content -->
@@ -1009,7 +1322,8 @@
           </div><!-- /.row -->
         </div><!-- /.container -->
       </div><!-- /.footer-secondary -->
-    </footer><!-- /.Footer -->
+    </footer>
+    <!-- /.Footer -->
 
   </div><!-- /.wrapper -->
   <div class="search-popup">
