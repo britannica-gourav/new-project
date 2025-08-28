@@ -270,45 +270,47 @@ $(function () {
     $(".zoomin").imagezoomsl();
 
 
-  // new menu dropdown
-  const mainDropdownBtn = document.getElementById('dropdownMenuButton');
-  const mainDropdownMenu = mainDropdownBtn.nextElementSibling;
+  // mobile Main dropdown toggle (mobile)
+const mainDropdownBtn = document.getElementById('dropdownMenuButton');
+const mainDropdownMenu = mainDropdownBtn.nextElementSibling;
 
-  mainDropdownBtn.addEventListener('click', function(e){
-    if(window.innerWidth < 992){ // Mobile only
-      e.preventDefault();
-      mainDropdownMenu.classList.toggle('show');
-    }
-  });
+mainDropdownBtn.addEventListener('click', function(e){
+  if(window.innerWidth < 992){ 
+    e.preventDefault();
+    mainDropdownMenu.classList.toggle('show');
+  }
+});
 
-  // Mobile click for submenus
-  document.querySelectorAll('.dropdown-submenu > .dropdown-toggle').forEach(function(el){
-    el.addEventListener('click', function(e){
-      if(window.innerWidth < 992){
-        e.preventDefault();
-        e.stopPropagation();
-        const parent = el.parentElement;
-        parent.classList.toggle('show');
-
-        // Close other open submenus at same level
-        parent.parentElement.querySelectorAll('.dropdown-submenu').forEach(function(sub){
-          if(sub !== parent) sub.classList.remove('show');
-        });
-      }
-    });
-  });
-
-  // Close all menus on clicking outside (mobile)
-  document.addEventListener('click', function(e){
+// Mobile: submenu toggle only on icon click
+document.querySelectorAll('.dropdown-submenu .submenu-toggle').forEach(function(icon){
+  icon.addEventListener('click', function(e){
     if(window.innerWidth < 992){
-      if(!mainDropdownBtn.contains(e.target)){
-        mainDropdownMenu.classList.remove('show');
-      }
-      document.querySelectorAll('.dropdown-submenu').forEach(function(sub){
-        if(!sub.contains(e.target)) sub.classList.remove('show');
+      e.preventDefault();
+      e.stopPropagation();
+
+      const parent = icon.closest('.dropdown-submenu');
+      parent.classList.toggle('show');
+
+      // Close other open submenus
+      parent.parentElement.querySelectorAll('.dropdown-submenu').forEach(function(sub){
+        if(sub !== parent) sub.classList.remove('show');
       });
     }
   });
+});
+
+// Close menus when clicking outside
+document.addEventListener('click', function(e){
+  if(window.innerWidth < 992){
+    if(!mainDropdownBtn.contains(e.target)){
+      mainDropdownMenu.classList.remove('show');
+    }
+    document.querySelectorAll('.dropdown-submenu').forEach(function(sub){
+      if(!sub.contains(e.target)) sub.classList.remove('show');
+    });
+  }
+});
+
     
 
 });

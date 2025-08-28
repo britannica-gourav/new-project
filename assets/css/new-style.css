@@ -22,6 +22,11 @@
 .dropdown-menu .dropdown-submenu>.dropdown-item span {
     transform: rotate(0deg);
     transition: transform 180ms ease, opacity 120ms ease;
+    width: 100%;
+    max-width: 20px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
 }
 .dropdown-menu .dropdown-submenu:hover>.dropdown-item span {
     transform: rotate(-90deg);
@@ -69,11 +74,13 @@
    .navbar .close-mobile-menu {
         right: 10px;
    }
-
-    .navbar .dropdown-menu .nav__item .nav__item-link {
+  .navbar .dropdown-menu .nav__item .nav__item-link {
       white-space: unset !important;
   }
   .dropdown-menu {
     padding: 0px 0px !important;
   }
+  .cart-button {
+      margin-bottom: 30px;
+    }
   }
