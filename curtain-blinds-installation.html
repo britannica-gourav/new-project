@@ -917,113 +917,76 @@
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-7">
             <div class="contact-panel">
-              <form class="contact-panel__form" method="post" action="assets/php/contact.php" id="contactForm">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <h4 class="contact-panel__title">Request An Estimate</h4>
-                    <p class="contact-panel__desc mb-30">For a cleaning that meets your highest standards, you need a
-                      dedicated team of trained specialists with all supplies needed to thoroughly clean your home.
-                    </p>
-                  </div>
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <label for="service">Choose your service</label>
-                      <select id="service" class="form-control">
-                        <option>Coronavirus Cleaning</option>
-                        <option>outdoor Cleaning</option>
-                        <option>indoor Cleaning</option>
-                      </select>
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <label for="type">Indicate type of cleaning</label>
-                      <select id="type" class="form-control">
-                        <option>Weekly Regular</option>
-                        <option>Monthly Regular</option>
-                      </select>
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <label for="facility">Facility type</label>
-                      <select id="facility" class="form-control">
-                        <option>Educational</option>
-                        <option>Educational</option>
-                      </select>
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="form-group">
-                      <label for="facilityName">Facility name</label>
-                      <input type="text" class="form-control" placeholder="7oroof" id="facilityName">
-                    </div>
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="rooms">Room(s)?</label>
-                      <div class="position-relative">
-                        <button class="decrease-qty">
-                          <i class="fas fa-caret-down"></i>
-                        </button>
-                        <input type="number" value="5" class="form-control input-number" id="rooms">
-                        <button class="increase-qty">
-                          <i class="fas fa-caret-up"></i>
-                        </button>
+                <form class="contact-panel__form" method="post" action="assets/php/contact.php" id="contactForm">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" class="form-control" placeholder="Ahmed" id="name">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="text" class="form-control" placeholder="0123456789" id="phone">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="text" class="form-control" placeholder="clanora@7oroof.com" id="email">
+                      </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="pets">Service Required</label>
+                        <select id="pets" class="form-control">
+                          <option>Cleaning Services</option>
+                          <option>Plumbing Services</option>
+                          <option>Electrician Services</option>
+                          <option>Appliance Services</option>
+                          <option>Carpentry Services</option>
+                          <option>Painting & Renovation</option>
+                          <option>Pest Control Services</option>
+                          <option>Home Maintenance & Handyman</option>
+                          <option>Gardening & Outdoor Services</option>
+                          <option>IT & Smart Home Services</option>
+                        </select>
                       </div>
                     </div>
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="hallway">Hallway(s)? </label>
-                      <div class="position-relative">
-                        <button class="decrease-qty">
-                          <i class="fas fa-caret-down"></i>
-                        </button>
-                        <input type="number" value="2" class="form-control input-number" id="hallway">
-                        <button class="increase-qty">
-                          <i class="fas fa-caret-up"></i>
-                        </button>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="Address">Address *</label>
+                        <input type="text" class="form-control" placeholder="Address" id="Address">
                       </div>
                     </div>
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-sm-4">
-                    <div class="form-group">
-                      <label for="staircase">Staircase(s)?</label>
-                      <div class="position-relative">
-                        <button class="decrease-qty">
-                          <i class="fas fa-caret-down"></i>
-                        </button>
-                        <input type="number" value="5" class="form-control input-number" id="staircase">
-                        <button class="increase-qty">
-                          <i class="fas fa-caret-up"></i>
-                        </button>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control date-icon bg-icon" placeholder="date" id="date">
                       </div>
                     </div>
-                  </div><!-- /.col-lg-4 -->
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label>Do you have all the necessary cleaning supplies?</label>
-                      <div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                          <input type="radio" id="yes" name="radioGroup" class="custom-control-input" value="Yes"
-                            checked>
-                          <label class="custom-control-label" for="yes">Yes</label>
-                        </div>
-                        <div class="custom-control custom-radio custom-control-inline">
-                          <input type="radio" id="no" name="radioGroup" class="custom-control-input" value="No">
-                          <label class="custom-control-label" for="no">No</label>
-                        </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" class="form-control time-icon bg-icon" value="12:30" id="time">
                       </div>
                     </div>
-                    <button type="submit"
-                      class="btn btn__secondary btn__block btn__xhight d-flex justify-content-between mt-10">
-                      <span>Submit Request</span> <i class="icon-arrow-right icon-outlined"></i>
-                    </button>
-                    <div class="contact-result"></div>
-                  </div><!-- /.col-lg-12 -->
-                </div><!-- /.row -->
-              </form>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="details">Additional Details</label>
+                        <textarea id="details" class="form-control" placeholder="Text here"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit"
+                        class="btn btn__secondary btn__block btn__xhight d-flex justify-content-between mt-10">
+                        <span>Submit Request</span> <i class="icon-arrow-right icon-outlined"></i>
+                      </button>
+                      <div class="contact-result"></div>
+                    </div>
+                  </div><!-- /.row -->
+                </form>
             </div>
           </div><!-- /.col-lg-7 -->
           <div class="col-sm-12 col-md-12 col-lg-5 d-flex flex-column justify-content-between">
